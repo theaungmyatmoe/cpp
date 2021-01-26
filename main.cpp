@@ -1,6 +1,5 @@
 #include<iostream>
 #include<math.h>
-using namespace std;
 
 int main() {
     
@@ -8,4 +7,7 @@ int main() {
     int y = 2;
     std::cout << pow(x,4) << std::endl;
     
+    return 0;
 }
+
+

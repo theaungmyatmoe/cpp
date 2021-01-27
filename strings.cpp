@@ -24,5 +24,14 @@ int main(){
     string alphas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     cout<< "Length of alphas => " << alphas.length();
     
+    // access string via indecies
     
+    string greet = "Hi";
+    std::cout << greet[0] << std::endl;
+    
+    // user input string
+    string userName;
+    std::cout << "Type your name : " << std::endl;
+    getline(cin,userName);
+    std::cout << "Your name is " << userName << std::endl;
 }

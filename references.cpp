@@ -6,4 +6,6 @@ int main() {
 
     cout << food << "\n"; 
     cout << meal << "\n";
+    
+    
 }

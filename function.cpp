@@ -26,6 +26,16 @@ void swapNums(int &x, int &y) {
     y = z;
 }
 
+// function overloading
+
+int addNums(int a,int b){
+    return a + b;
+}
+
+double addNums(double a,double b){
+    return a + b;
+}
+
 int main() {
     getName();
     getStudent("Noosi");
@@ -40,4 +50,11 @@ int main() {
     swapNums(a, b);
     
     std::cout <<"After =>" << a << b << std::endl;
+    
+    // function overloading
+    int num1 = addNums(15,20);
+    double num2 = addNums(17.0,18.9);
+    std::cout << num1 << std::endl;
+    std::cout << num2 << std::endl;
+    
 }

@@ -5,9 +5,15 @@ using namespace std;
 void getName();
 void getStudent(string name);
 
+void getCountry(string country = "Myanmar"){
+    cout << "My country is " << country<<endl;
+}
+
 int main() {
     getName();
     getStudent("Noosi");
+    getCountry();
+    getCountry("Norway");
 }
 
 void getName() {
@@ -17,3 +23,4 @@ void getName() {
 void getStudent(string name){
     cout << name << endl;
 }
+

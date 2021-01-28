@@ -1,12 +1,29 @@
 #include <iostream>
 #include<string>
 using namespace std;
-// declaration
-void getName();
-void getStudent(string name);
 
-void getCountry(string country = "Myanmar"){
+void getName() {
+    cout << "Aung Myat Moe" << endl;
+}
+
+void getStudent(string name) {
+    cout << name << endl;
+}
+
+
+void getCountry(string country = "Myanmar") {
     cout << "My country is " << country<<endl;
+}
+
+int addition(int x, int y) {
+    return x + y;
+}
+
+// reference
+void swapNums(int &x, int &y) {
+    int z = x;
+    x = y;
+    y = z;
 }
 
 int main() {
@@ -14,13 +31,13 @@ int main() {
     getStudent("Noosi");
     getCountry();
     getCountry("Norway");
-}
+    std::cout << addition(10, 20) << std::endl;
 
-void getName() {
-    cout << "Aung Myat Moe" << endl;
+    int a = 20;
+    int b = 10;
+    std::cout << "Before => " << a << b << std::endl;
+    
+    swapNums(a, b);
+    
+    std::cout <<"After =>" << a << b << std::endl;
 }
-
-void getStudent(string name){
-    cout << name << endl;
-}
-
